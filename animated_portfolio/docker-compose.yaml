@@ -3,7 +3,7 @@ version: "3"
 services:
   site:
     build: .
-    command: ["npm", "run", "start"]
+    command: ["npm", "run", "dev"]
     ports:
       - "3000:3000"
     volumes:
