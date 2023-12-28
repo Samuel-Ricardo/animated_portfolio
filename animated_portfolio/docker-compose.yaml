@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  site:
+    build: .
+    command: ["npm", "run", "start"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/node/app
+    env_file:
+      - .env.local
+    external_links:
+      - "host.docker.internal"
