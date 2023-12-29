@@ -5,5 +5,28 @@
     max-width: $screen-desktop;
     height: 100%;
     margin: auto;
+
+    .text_container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 30px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+      }
+    }
   }
 }
