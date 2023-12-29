@@ -1,0 +1,14 @@
+@import "../../../app/globals.scss";
+
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: $screen-desktop;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
