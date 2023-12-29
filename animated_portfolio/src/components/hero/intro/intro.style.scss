@@ -1,0 +1,9 @@
+@import "../../../app/globals.scss";
+
+#hero {
+  .intro {
+    max-width: $screen-desktop;
+    height: 100%;
+    margin: auto;
+  }
+}
