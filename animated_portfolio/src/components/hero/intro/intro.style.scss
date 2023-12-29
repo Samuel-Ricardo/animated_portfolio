@@ -27,6 +27,13 @@
         color: rebeccapurple;
         letter-spacing: 10px;
       }
+
+      h1 {
+        font-size: 88px;
+        @include mobile {
+          font-size: 36px;
+        }
+      }
     }
   }
 }
