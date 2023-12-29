@@ -1,0 +1,8 @@
+@import "../../../app/globals.scss";
+
+#hero {
+  height: calc(100vh -100px);
+  overflow: hidden;
+  background: $background-gradient;
+  position: relative;
+}
