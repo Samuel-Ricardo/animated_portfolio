@@ -1,3 +1,5 @@
+import "./intro.style.scss";
+
 import { MotionButton } from "@/components/motion/button.component";
 import { MotionDiv } from "@/components/motion/div.component";
 import { MotionH1 } from "@/components/motion/h1.component";
@@ -19,14 +21,16 @@ export const HeroIntro = () => {
         <MotionH1 {...animation}>Full Stack Developer</MotionH1>
         <MotionDiv {...animation} className="button_container">
           <MotionButton variants={animation}>See the latest works</MotionButton>
-          <MotionButton variants={animation}>Contact me</MotionButton>
+          <MotionButton variants={animation} className="fill">
+            Contact me
+          </MotionButton>
         </MotionDiv>
         <MotionDiv variants={animation} animate="scrollButton">
           <Image
             src="/scroll.png"
             alt="scroll down icon"
-            width={64}
-            height={64}
+            width={50}
+            height={50}
           />
         </MotionDiv>
       </MotionDiv>
