@@ -22,7 +22,12 @@ export const HeroIntro = () => {
           <MotionButton variants={animation}>Contact me</MotionButton>
         </MotionDiv>
         <MotionDiv variants={animation} animate="scrollButton">
-          <Image src="/scroll.png" alt="scroll down icon" />
+          <Image
+            src="/scroll.png"
+            alt="scroll down icon"
+            width={64}
+            height={64}
+          />
         </MotionDiv>
       </MotionDiv>
     </div>
