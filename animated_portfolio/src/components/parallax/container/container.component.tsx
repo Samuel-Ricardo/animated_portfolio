@@ -1,3 +1,4 @@
+import "./container.style.scss";
 import { IParallaxContainerProps } from "@type/props/parallax/container";
 
 export const ParallaxContainer = ({
