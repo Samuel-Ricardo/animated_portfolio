@@ -2,4 +2,7 @@ export const MOTION_REGISTRY = {
   FADE: {
     IN: "MODULE::ANIMATIONS:FADE:IN",
   },
+  TEXT: {
+    DEFAULT: "MODULE::ANIMATIONS:TEXT:DEFAULT",
+  },
 };
