@@ -1,5 +1,4 @@
-import { IParallaxContainerProps } from "./container";
-
-export interface IParallaxProps extends IParallaxContainerProps {
+export interface IParallaxProps {
   title: string;
+  theme: "primary" | "secondary";
 }
