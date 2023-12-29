@@ -4,6 +4,6 @@ import Link from "next/link";
 
 export const NavbarItem = ({ link, icon, alt }: INavbarItemProps) => (
   <Link href={link}>
-    <Image src={icon} alt={alt} width={18} height={18} />
+    <Image src={icon} alt={alt} width={38} height={38} className="rounded-md" />
   </Link>
 );

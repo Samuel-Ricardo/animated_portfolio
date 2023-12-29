@@ -2,6 +2,7 @@
 
 .navbar {
   height: 100px;
+  scroll-snap-align: center;
 
   .wrapper {
     max-width: $screen-desktop;
