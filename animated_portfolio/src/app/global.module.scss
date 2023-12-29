@@ -1,5 +1,10 @@
+@import "./style/variables/screen.scss";
+
 $primary-color: #64ff00;
 
 :export {
   primaryColor: $primary-color;
+  desktopScreen: $screen-dektop;
+  tabletScreen: $screen-tablet;
+  mobileScreen: $screen-mobile;
 }
