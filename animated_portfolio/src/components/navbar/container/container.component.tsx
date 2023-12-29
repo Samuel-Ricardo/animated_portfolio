@@ -1,16 +1,9 @@
-import { NavbarItem } from "../item/item.component";
-import { NavbarTitle } from "../title/title.component";
+import "./container.style.scss";
 
-export const NavbarContainer = () => (
+import { PropsWithChildren } from "react";
+
+export const NavbarContainer = ({ children }: PropsWithChildren) => (
   <nav className="navbar">
-    <div className="wrapper">
-      <NavbarTitle />
-      <div className="social">
-        <NavbarItem link={"#"} icon={"/facebook.png"} alt="facebook icon" />
-        <NavbarItem link={"#"} icon={"/instagram.png"} alt="facebook icon" />
-        <NavbarItem link={"#"} icon={"/youtube.png"} alt="facebook icon" />
-        <NavbarItem link={"#"} icon={"/dribbble.png"} alt="facebook icon" />
-      </div>
-    </div>
+    <div className="wrapper">{children}</div>
   </nav>
 );

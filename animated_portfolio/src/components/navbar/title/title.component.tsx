@@ -1,3 +1,5 @@
+import "./title.style.scss";
+
 import { INavbarTitleProps } from "@/@types/props/navbar/title";
 import { MotionH1 } from "@/components/motion/h1.component";
 import { MODULES } from "@/modules/app.factory";
