@@ -15,5 +15,13 @@
       justify-content: flex-end;
       padding: 20px;
     }
+
+    h2 {
+      font-weight: bold;
+
+      @include mobile {
+        display: none;
+      }
+    }
   }
 }

@@ -1,0 +1,11 @@
+@import "../../../app/globals.scss";
+
+.navbar {
+  h2 {
+    font-weight: bold;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
