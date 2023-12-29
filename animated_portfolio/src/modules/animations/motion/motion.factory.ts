@@ -1,6 +1,7 @@
 import { MOTION_MODULE } from "./motion.module";
 import { MOTION_REGISTRY } from "./motion.registry";
 import { fadeIn } from "./variations/fadein.animation";
+import { slider } from "./variations/slider.animation";
 import { defaultTextVariants } from "./variations/text.animation";
 
 export const MOTION_FACTORY = {
@@ -13,4 +14,5 @@ export const MOTION_FACTORY = {
         MOTION_REGISTRY.TEXT.DEFAULT,
       ),
   },
+  SLIDER: () => MOTION_MODULE.get<typeof slider>(MOTION_REGISTRY.SLIDER),
 };
