@@ -1,5 +1,6 @@
 import { Cursor } from "@/components/cursor/cursor.component";
 import { Hero } from "./section/hero.section";
+import { Services } from "./section/services.section";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <section id="Homepage">
         <Hero />
       </section>
-      <section id="Services">Services</section>
+      <Services />
       <section id="Portfolio">Portfolio</section>
       <section id="Contact">Contact</section>
     </main>
