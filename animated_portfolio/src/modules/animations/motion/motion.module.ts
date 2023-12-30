@@ -4,6 +4,7 @@ import { fadeIn } from "./variations/fadein.animation";
 import getDecorators from "inversify-inject-decorators";
 import { defaultTextVariants } from "./variations/text.animation";
 import { slider } from "./variations/slider.animation";
+import { slideIn } from "./variations/slideIn.animation";
 
 export const MOTION_MODULE = new Container({ defaultScope: "Singleton" });
 
@@ -12,5 +13,6 @@ MOTION_MODULE.bind(MOTION_REGISTRY.TEXT.DEFAULT).toConstantValue(
   defaultTextVariants,
 );
 MOTION_MODULE.bind(MOTION_REGISTRY.SLIDER).toConstantValue(slider);
+MOTION_MODULE.bind(MOTION_REGISTRY.SLIDE.IN).toConstantValue(slideIn);
 
 export const { lazyInject: injectMotion } = getDecorators(MOTION_MODULE);
