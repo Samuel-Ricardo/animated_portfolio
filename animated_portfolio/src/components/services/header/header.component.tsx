@@ -11,8 +11,8 @@ export const ServicesHeader = () => {
         <Image
           src="/people.webp"
           alt="peoples in meet"
-          width={100}
-          height={50}
+          width={300}
+          height={100}
         />
         <h1>
           <MotionB whileHover={{ color: "orange" }}>Unique</MotionB> Ideas
@@ -20,8 +20,7 @@ export const ServicesHeader = () => {
       </div>
       <div className="title">
         <h1>
-          <MotionB whileHover={{ color: "orange" }}>For Your</MotionB>
-          Business.
+          <MotionB whileHover={{ color: "orange" }}>For Your</MotionB> Business.
         </h1>
         <button>WHAT WE DO?</button>
       </div>
