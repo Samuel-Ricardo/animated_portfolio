@@ -4,12 +4,12 @@ import { IParallaxContainerProps } from "@type/props/parallax/container";
 export const ParallaxContainer = ({
   theme,
   children,
-  ref,
+  target,
 }: IParallaxContainerProps) => {
   return (
     <section
       id="parallax"
-      ref={ref}
+      ref={target}
       style={{
         background:
           theme === "primary"
