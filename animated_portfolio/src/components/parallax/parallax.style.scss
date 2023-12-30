@@ -29,4 +29,13 @@
       height: 50%;
     }
   }
+
+  .planets {
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
 }
