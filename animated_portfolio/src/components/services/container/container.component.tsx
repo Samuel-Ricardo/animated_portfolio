@@ -7,8 +7,8 @@ import { MotionSection } from "@/components/motion/section.component";
 export const ServicesContainer = ({ children }: PropsWithChildren) => {
   const animation = MODULES.ANIMATION.MOTION.SLIDE.IN();
   return (
-    <MotionSection className="overview" {...animation}>
-      {children}
+    <MotionSection id="service" {...animation}>
+      <div className="overview">{children}</div>
     </MotionSection>
   );
 };
