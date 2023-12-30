@@ -2,6 +2,8 @@ export const PortfolioItemConteiner = ({
   children,
 }: React.PropsWithChildren) => (
   <section className="item">
-    <div className="container">{children}</div>
+    <div className="container">
+      <div className="wrapper">{children}</div>
+    </div>
   </section>
 );
