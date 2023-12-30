@@ -1,5 +1,6 @@
-import { MotionDiv } from "@/components/motion/div.component";
 import "./item.style.scss";
+
+import { MotionDiv } from "@/components/motion/div.component";
 import { IServiceItemProps } from "@/@types/props/services/item";
 
 export const ServicesItem = ({
