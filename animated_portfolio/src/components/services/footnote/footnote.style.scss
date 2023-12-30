@@ -1,11 +1,24 @@
 @import "../../../app/globals.scss";
 
-#Services {
+#service .overview {
   .footnote {
     flex: 1;
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 20px;
+
+    p {
+      font-weight: 200;
+      font-size: 20px;
+      color: gray;
+      text-align: right;
+    }
+
+    hr {
+      width: 500px;
+      border: none;
+      border-top: 0.5px solid gray;
+    }
   }
 }
