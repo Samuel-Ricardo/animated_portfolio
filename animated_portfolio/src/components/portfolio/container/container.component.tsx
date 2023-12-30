@@ -1,7 +1,7 @@
 import "./container.style.scss";
 
 import { PropsWithChildren, RefObject } from "react";
-import { MotionDiv } from "@/components/motion/div.component";
+import { ProgressBar } from "@/components/progressbar/progressbar.component";
 
 export const PortfolioContainer = ({
   children,
@@ -13,10 +13,7 @@ export const PortfolioContainer = ({
 }>) => {
   return (
     <div id="_portfolio" className="overview" ref={target}>
-      <div className="progress">
-        <h1>Featured Works</h1>
-        <MotionDiv style={{ scaleX: progress }} className="bar" />
-      </div>
+      <ProgressBar progress={progress} />
       {children}
     </div>
   );
