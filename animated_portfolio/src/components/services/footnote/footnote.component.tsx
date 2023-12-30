@@ -8,5 +8,6 @@ export const Footnote = () => (
     <p>
       I focus on helping your brand grow <br /> and move forward
     </p>
+    <hr />
   </MotionDiv>
 );
