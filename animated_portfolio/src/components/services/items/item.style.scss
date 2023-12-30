@@ -6,4 +6,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include mobile {
+    border: none;
+    align-items: center;
+    gap: 18px;
+    padding: 10px;
+  }
+
+  p {
+    @include mobile {
+      display: none;
+    }
+  }
 }
