@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @apply transition-colors;
+  @apply duration-500;
+  @apply ease-in-out;
 
   @include mobile {
     border: none;

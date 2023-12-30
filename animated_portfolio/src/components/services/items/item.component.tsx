@@ -11,7 +11,7 @@ export const ServicesItem = ({
   return (
     <MotionDiv
       className="item"
-      whileHover={{ background: "lightgray", color: "black" }}
+      whileHover={{ background: "white", color: "black" }}
     >
       <h2>{title}</h2>
       <p>{description}</p>
