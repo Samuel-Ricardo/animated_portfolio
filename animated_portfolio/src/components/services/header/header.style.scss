@@ -12,8 +12,31 @@
     gap: 50px;
 
     img {
+      width: 300px;
+      height: 100px;
       border-radius: 50px;
       object-fit: cover;
+    }
+
+    h1 {
+      font-size: 86px;
+      font-weight: 100;
+    }
+
+    b {
+      font-weight: bold;
+      font-size: 96px;
+    }
+
+    button {
+      width: 300px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: orange;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: $background;
     }
   }
 }
