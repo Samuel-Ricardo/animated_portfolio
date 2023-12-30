@@ -6,12 +6,16 @@ import { MotionDiv } from "@/components/motion/div.component";
 export const PortfolioContainer = ({
   children,
   target,
-}: PropsWithChildren<{ target: RefObject<HTMLDivElement> }>) => {
+  progress,
+}: PropsWithChildren<{
+  target: RefObject<HTMLDivElement>;
+  progress: number;
+}>) => {
   return (
-    <div id="portfolio" className="overview" ref={target}>
+    <div id="_portfolio" className="overview" ref={target}>
       <div className="progress">
         <h1>Featured Works</h1>
-        <MotionDiv />
+        <MotionDiv style={{ scaleX: progress }} className="bar" />
       </div>
       {children}
     </div>
