@@ -1,0 +1,16 @@
+@import "../../app/globals.scss";
+
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  text-align: center;
+  color: orange;
+  font-size: 36px;
+
+  .bar {
+    height: 10px;
+    background-color: #ffffff;
+  }
+}
