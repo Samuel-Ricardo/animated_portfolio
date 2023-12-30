@@ -17,5 +17,16 @@
     height: 100%;
     position: absolute;
     z-index: 3;
+
+    @include tablet {
+      height: 75%;
+      bottom: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @include mobile {
+      height: 50%;
+    }
   }
 }
