@@ -1,3 +1,5 @@
+import "./header.style.scss";
+
 import { MotionB } from "@/components/motion/b.component";
 import { MotionDiv } from "@/components/motion/div.component";
 import Image from "next/image";
