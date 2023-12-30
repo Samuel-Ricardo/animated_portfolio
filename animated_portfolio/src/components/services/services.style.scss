@@ -5,4 +5,9 @@
   flex: 2;
   max-width: $screen-desktop;
   margin: auto;
+
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+  }
 }
