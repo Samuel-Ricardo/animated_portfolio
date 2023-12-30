@@ -37,5 +37,16 @@
     height: 100%;
     position: absolute;
     z-index: 2;
+
+    @include tablet {
+      height: 70%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      bottom: 0;
+    }
+
+    @include mobile {
+      height: 50%;
+    }
   }
 }
