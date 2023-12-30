@@ -57,5 +57,13 @@
     height: 100%;
     position: absolute;
     z-index: 1;
+
+    @include tablet {
+      width: 150%;
+    }
+
+    @include mobile {
+      width: 200%;
+    }
   }
 }
