@@ -5,4 +5,15 @@
   flex-direction: column;
   flex: 2;
   align-items: center;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    img {
+      border-radius: 50px;
+      object-fit: cover;
+    }
+  }
 }
