@@ -1,3 +1,5 @@
+import "./preview.style.scss";
+
 import { IPortfolioItemPreviewProps } from "@/@types/props/portfolio/item/preview";
 import Image from "next/image";
 
@@ -6,8 +8,8 @@ export const PortfolioItemPreview = ({
   target,
 }: IPortfolioItemPreviewProps) => {
   return (
-    <div ref={target}>
-      <Image src={src} alt="Portfolio preview image" fill objectFit="cover" />
+    <div className="preview_image" ref={target}>
+      <Image src={src} alt="Portfolio preview image" width={800} height={800} />
     </div>
   );
 };
