@@ -1,6 +1,9 @@
 import { MOTION_MODULE } from "./motion.module";
 import { MOTION_REGISTRY } from "./motion.registry";
-import { EMERGE_ANIMATION } from "./variations/emerge.animation";
+import {
+  EMERGE_ANIMATION,
+  SIMPLE_EMERGE_ANIMATION,
+} from "./variations/emerge.animation";
 import { fadeIn } from "./variations/fadein.animation";
 import { OPEN_FILL_ANIMATION } from "./variations/open/fill.animation";
 import { slideIn } from "./variations/slideIn.animation";
@@ -28,6 +31,12 @@ export const MOTION_FACTORY = {
   },
   EMERGE: () =>
     MOTION_MODULE.get<typeof EMERGE_ANIMATION>(MOTION_REGISTRY.EMERGE),
+  SIMPLE: {
+    EMERGE: () =>
+      MOTION_MODULE.get<typeof SIMPLE_EMERGE_ANIMATION>(
+        MOTION_REGISTRY.SIMPLE.EMERGE,
+      ),
+  },
   SVG: {
     DRAWN: () =>
       MOTION_MODULE.get<typeof DRAWN_ANIMATION>(MOTION_REGISTRY.SVG.DRAWN),
