@@ -1,0 +1,10 @@
+@import "../../../app/globals.scss";
+
+#Contact ._container {
+  height: 100%;
+  max-width: $screen-desktop;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
