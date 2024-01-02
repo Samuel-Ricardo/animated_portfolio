@@ -1,5 +1,3 @@
-//import "./item.style.scss";
-
 import { PortfolioItemConteiner } from "./container/container.component";
 import { PortfolioItemPreview } from "./preview/preview.component";
 import { PortfolioItemDetails } from "./details/details.component";
