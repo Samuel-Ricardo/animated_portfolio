@@ -1,5 +1,5 @@
-import { IPortfolioDTO } from "../DTO/portfolio.dto";
+import { Portfolio } from "../entity/portfolio.entity";
 
 export interface IPortfolioRepository {
-  selectAll(): IPortfolioDTO[];
+  selectAll(): Portfolio[];
 }
