@@ -5,6 +5,7 @@ import {
   SIMPLE_EMERGE_ANIMATION,
 } from "./variations/emerge.animation";
 import { fadeIn } from "./variations/fadein.animation";
+import { OPACITY_ANIMATION } from "./variations/opacity.animation";
 import { OPEN_FILL_ANIMATION } from "./variations/open/fill.animation";
 import { slideIn } from "./variations/slideIn.animation";
 import { slider } from "./variations/slider.animation";
@@ -41,4 +42,6 @@ export const MOTION_FACTORY = {
     DRAWN: () =>
       MOTION_MODULE.get<typeof DRAWN_ANIMATION>(MOTION_REGISTRY.SVG.DRAWN),
   },
+  OPACITY: () =>
+    MOTION_MODULE.get<typeof OPACITY_ANIMATION>(MOTION_REGISTRY.OPACITY),
 };
