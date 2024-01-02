@@ -4,7 +4,7 @@ import { IPortfolioDTO } from "../DTO/portfolio.dto";
 @injectable()
 export class Portfolio {
   constructor(
-    public id: string,
+    public id: number,
     public title: string,
     public description: string,
     public image: string,
@@ -13,7 +13,7 @@ export class Portfolio {
 
   public static fromDTO(dto: IPortfolioDTO) {
     return new Portfolio(
-      dto.id || "",
+      dto.id || 0,
       dto.title,
       dto.description,
       dto.image,
