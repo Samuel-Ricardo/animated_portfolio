@@ -20,4 +20,14 @@ export class Portfolio {
       dto.link,
     );
   }
+
+  public toDTO(): IPortfolioDTO {
+    return {
+      id: this.id,
+      title: this.title,
+      description: this.description,
+      image: this.image,
+      link: this.link,
+    };
+  }
 }
