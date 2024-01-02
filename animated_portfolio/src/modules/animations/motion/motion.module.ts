@@ -11,6 +11,7 @@ import {
   SIMPLE_EMERGE_ANIMATION,
 } from "./variations/emerge.animation";
 import { DRAWN_ANIMATION } from "./variations/svg/drawn.animation";
+import { OPACITY_ANIMATION } from "./variations/opacity.animation";
 
 export const MOTION_MODULE = new Container({ defaultScope: "Singleton" });
 
@@ -28,5 +29,6 @@ MOTION_MODULE.bind(MOTION_REGISTRY.SIMPLE.EMERGE).toConstantValue(
   SIMPLE_EMERGE_ANIMATION,
 );
 MOTION_MODULE.bind(MOTION_REGISTRY.SVG.DRAWN).toConstantValue(DRAWN_ANIMATION);
+MOTION_MODULE.bind(MOTION_REGISTRY.OPACITY).toConstantValue(OPACITY_ANIMATION);
 
 export const { lazyInject: injectMotion } = getDecorators(MOTION_MODULE);
