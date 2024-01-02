@@ -4,9 +4,11 @@ import { NavbarItem } from "./item/item.component";
 import { NavbarTitle } from "./title/title.component";
 import { MotionDiv } from "../motion/div.component";
 import { MODULES } from "@/modules/app.factory";
+import { Sidebar } from "../sidebar/sidebar.component";
 
 export const Navbar = ({ title }: INavbarTitleProps) => (
   <NavbarContainer>
+    <Sidebar />
     <NavbarTitle title={title} />
     <MotionDiv className="social" {...MODULES.ANIMATION.MOTION.FADE.IN()({})}>
       <NavbarItem link={"#"} icon={"/facebook.png"} alt="facebook icon" />
