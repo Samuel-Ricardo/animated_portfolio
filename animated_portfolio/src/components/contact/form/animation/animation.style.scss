@@ -1,0 +1,8 @@
+@import "../../../../app/globals.scss";
+
+#Contact ._container #form .contact_animation {
+  stroke: orange;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+}
