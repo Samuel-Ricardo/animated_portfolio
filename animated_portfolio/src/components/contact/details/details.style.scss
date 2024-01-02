@@ -16,8 +16,16 @@
   h1 {
     font-size: 100px;
     line-height: 88px;
+    font-weight: bold;
 
     @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  .item {
+    h2 {
+      font-weight: bold;
       font-size: 36px;
     }
   }
