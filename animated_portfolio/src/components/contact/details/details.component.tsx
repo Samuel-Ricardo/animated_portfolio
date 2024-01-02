@@ -9,7 +9,7 @@ export const ContactAreaDetails = () => {
       className="details"
       {...MODULES.ANIMATION.MOTION.SIMPLE.EMERGE()}
     >
-      <MotionH1>Let&#39s Work Together</MotionH1>
+      <MotionH1>Let&#39;s Work Together</MotionH1>
       <ContactAreaDetailsItem
         title="Mail"
         description="samuelricardoofficial@gmail.com"
