@@ -7,7 +7,7 @@ export const ContactAreaDetailsItem = ({
   description,
 }: IContactAreaDetailsItemProps) => {
   return (
-    <MotionDiv {...MODULES.ANIMATION.MOTION.SIMPLE.EMERGE()}>
+    <MotionDiv {...MODULES.ANIMATION.MOTION.SIMPLE.EMERGE()} className="item">
       <h2>{title}</h2>
       <span>{description}</span>
     </MotionDiv>
