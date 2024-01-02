@@ -3,4 +3,9 @@
 #Contact ._container #form {
   flex: 1;
   position: relative;
+
+  @include mobile {
+    padding: 50px;
+    width: 100%;
+  }
 }
