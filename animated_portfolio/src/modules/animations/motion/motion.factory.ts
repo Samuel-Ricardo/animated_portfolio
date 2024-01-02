@@ -5,6 +5,7 @@ import { fadeIn } from "./variations/fadein.animation";
 import { OPEN_FILL_ANIMATION } from "./variations/open/fill.animation";
 import { slideIn } from "./variations/slideIn.animation";
 import { slider } from "./variations/slider.animation";
+import { DRAWN_ANIMATION } from "./variations/svg/drawn.animation";
 import { defaultTextVariants } from "./variations/text.animation";
 
 export const MOTION_FACTORY = {
@@ -27,4 +28,8 @@ export const MOTION_FACTORY = {
   },
   EMERGE: () =>
     MOTION_MODULE.get<typeof EMERGE_ANIMATION>(MOTION_REGISTRY.EMERGE),
+  SVG: {
+    DRAWN: () =>
+      MOTION_MODULE.get<typeof DRAWN_ANIMATION>(MOTION_REGISTRY.SVG.DRAWN),
+  },
 };
