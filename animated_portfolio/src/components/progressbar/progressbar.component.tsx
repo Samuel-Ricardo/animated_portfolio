@@ -1,3 +1,5 @@
+import "./progressbar.style.scss";
+
 import { IProgressBarProps } from "@/@types/props/progressbar";
 import { MotionDiv } from "@/components/motion/div.component";
 
