@@ -1,4 +1,4 @@
-"reflect-metadata";
+import "reflect-metadata";
 
 import { Container } from "inversify";
 import { ANIMATION_MODULE } from "./animations/animation.module";

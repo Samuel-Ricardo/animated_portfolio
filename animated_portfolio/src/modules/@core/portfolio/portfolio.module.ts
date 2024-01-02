@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 import { Container } from "inversify";
 import { PORTFOLIO_REGISTRY } from "./portfolio.registry";
 import { PortfolioController } from "./controller/portfolio.controller";
