@@ -1,3 +1,5 @@
+import "./container.style.scss";
+
 export const ContactAreaFormContainer = ({
   children,
 }: React.PropsWithChildren) => {
