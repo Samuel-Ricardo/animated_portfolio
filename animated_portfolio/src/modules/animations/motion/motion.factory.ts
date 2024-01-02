@@ -1,5 +1,6 @@
 import { MOTION_MODULE } from "./motion.module";
 import { MOTION_REGISTRY } from "./motion.registry";
+import { EMERGE_ANIMATION } from "./variations/emerge.animation";
 import { fadeIn } from "./variations/fadein.animation";
 import { OPEN_FILL_ANIMATION } from "./variations/open/fill.animation";
 import { slideIn } from "./variations/slideIn.animation";
@@ -24,4 +25,6 @@ export const MOTION_FACTORY = {
     FILL: () =>
       MOTION_MODULE.get<typeof OPEN_FILL_ANIMATION>(MOTION_REGISTRY.OPEN.FILL),
   },
+  EMERGE: () =>
+    MOTION_MODULE.get<typeof EMERGE_ANIMATION>(MOTION_REGISTRY.EMERGE),
 };
