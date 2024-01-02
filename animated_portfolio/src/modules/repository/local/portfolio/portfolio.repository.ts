@@ -5,7 +5,7 @@ import { items } from "../../../../database";
 import { Portfolio } from "@/modules/@core/portfolio/entity/portfolio.entity";
 
 @injectable()
-export class PortfolioRepository implements IPortfolioRepository {
+export class PortfolioLocalRepository implements IPortfolioRepository {
   selectAll(): Portfolio[] {
     return items;
   }
