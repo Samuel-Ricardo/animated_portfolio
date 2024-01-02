@@ -1,0 +1,11 @@
+@import "../../../app/globals.scss";
+
+#sidebar .link_list {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  background-color: #fff;
+}

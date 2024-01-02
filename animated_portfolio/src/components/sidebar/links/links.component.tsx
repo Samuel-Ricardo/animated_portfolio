@@ -1,3 +1,5 @@
+import "./links.style.scss";
+
 import { MotionDiv } from "@/components/motion/div.component";
 import { MODULES } from "@/modules/app.factory";
 import Link from "next/link";
