@@ -1,3 +1,5 @@
+"reflect-metadata";
+
 import { Container } from "inversify";
 import { ANIMATION_MODULE } from "./animations/animation.module";
 import { PORTFOLIO_MODULE } from "./@core/portfolio/portfolio.module";
