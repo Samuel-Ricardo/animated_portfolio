@@ -1,3 +1,5 @@
+import "./button.style.scss";
+
 import { ISidebarToggleButtonProps } from "@/@types/props/sidebar/toggle/button";
 import { MotionPath } from "@/components/motion/svg/path.component";
 import { MODULES } from "@/modules/app.factory";
