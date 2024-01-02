@@ -17,7 +17,7 @@ export const ContactAreaDetails = () => {
       <ContactAreaDetailsItem title="Phone" description="+55 11 99999-9999" />
       <ContactAreaDetailsItem
         title="Github"
-        description="https://github.com/samuelricardo"
+        description="https://github.com/Samuel-Ricardo"
       />
     </MotionDiv>
   );
