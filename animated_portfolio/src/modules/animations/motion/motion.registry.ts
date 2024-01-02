@@ -9,4 +9,7 @@ export const MOTION_REGISTRY = {
   SLIDE: {
     IN: "MODULE::ANIMATIONS:SLIDE:IN",
   },
+  OPEN: {
+    FILL: "MODULE::ANIMATIONS:OPEN:FILL",
+  },
 };
