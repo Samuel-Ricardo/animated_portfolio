@@ -1,0 +1,8 @@
+@import "../../../app/globals.scss";
+
+#Contact ._container .details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}

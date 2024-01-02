@@ -1,3 +1,5 @@
+import "./details.style.scss";
+
 import { MotionDiv } from "@/components/motion/div.component";
 import { MotionH1 } from "@/components/motion/h1.component";
 import { ContactAreaDetailsItem } from "./item/item.component";
