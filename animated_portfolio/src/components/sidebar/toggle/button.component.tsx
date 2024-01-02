@@ -5,12 +5,10 @@ import { MotionPath } from "@/components/motion/svg/path.component";
 import { MODULES } from "@/modules/app.factory";
 
 export const ToggleButton = ({ setOpen }: ISidebarToggleButtonProps) => {
-  const animations = MODULES.ANIMATION.MOTION.SVG.DRAWN();
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <MotionPath
-          {...animations({})}
           strokeWidth="3"
           stroke="black"
           strokeLinecap="round"
