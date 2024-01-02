@@ -1,5 +1,12 @@
 import { ContactAreaContainer } from "./container/container.component";
+import { ContactAreaDetails } from "./details/details.component";
+import { ContactForm } from "./form/form.component";
 
 export const ContactArea = () => {
-  return <ContactAreaContainer>Hello World! :D</ContactAreaContainer>;
+  return (
+    <ContactAreaContainer>
+      <ContactAreaDetails />
+      <ContactForm />
+    </ContactAreaContainer>
+  );
 };
