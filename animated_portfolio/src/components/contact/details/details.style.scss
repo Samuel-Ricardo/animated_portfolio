@@ -5,4 +5,11 @@
   flex: 1;
   flex-direction: column;
   gap: 40px;
+
+  @include mobile {
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+  }
 }
