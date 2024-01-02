@@ -1,4 +1,4 @@
 export interface IPortfolioContainerProps extends React.PropsWithChildren {
-  target: React.RefObject<HTMLDivElement>;
-  progress: number;
+  target?: React.RefObject<HTMLDivElement>;
+  progress?: number;
 }
