@@ -1,12 +1,23 @@
 import { injectable } from "inversify";
+import { IPortfolioDTO } from "../DTO/portfolio.dto";
 
 @injectable()
 export class Portfolio {
   constructor(
-    private id: string,
-    private title: string,
-    private description: string,
-    private image: string,
-    private link?: string,
+    public id: string,
+    public title: string,
+    public description: string,
+    public image: string,
+    public link?: string,
   ) {}
+
+  public static fromDTO(dto: IPortfolioDTO) {
+    return new Portfolio(
+      dto.id || "",
+      dto.title,
+      dto.description,
+      dto.image,
+      dto.link,
+    );
+  }
 }
