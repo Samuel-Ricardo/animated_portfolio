@@ -13,16 +13,22 @@
       border: 1px solid #ffffff;
       color: #ffffff;
       border-radius: 5px;
+      @include mobile {
+        padding: 10px;
+      }
     }
-  }
 
-  button {
-    padding: 20px;
-    border: none;
-    background-color: orange;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 26px;
-    color: #000000;
+    button {
+      padding: 20px;
+      border: none;
+      background-color: orange;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 26px;
+      color: #000000;
+      @include mobile {
+        padding: 10px;
+      }
+    }
   }
 }
