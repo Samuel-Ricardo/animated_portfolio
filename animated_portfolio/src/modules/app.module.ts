@@ -4,6 +4,7 @@ import { Container } from "inversify";
 import { ANIMATION_MODULE } from "./animations/animation.module";
 import { PORTFOLIO_MODULE } from "./@core/portfolio/portfolio.module";
 import { REPOSITORY_MODULE } from "./repository/repository.module";
+import { VALIDATION_MODULE } from "./validation/validation.module";
 
 const MODULE = new Container({ autoBindInjectable: true });
 
@@ -12,4 +13,5 @@ export const APP_MODULE = Container.merge(
   ANIMATION_MODULE,
   PORTFOLIO_MODULE,
   REPOSITORY_MODULE,
+  VALIDATION_MODULE,
 );
