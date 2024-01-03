@@ -6,4 +6,4 @@ export const CONTACT_FORM_SCHEMA = z.object({
   message: z.string().min(10),
 });
 
-export type SubmitTweetData = z.infer<typeof CONTACT_FORM_SCHEMA>;
+export type ContactFormData = z.infer<typeof CONTACT_FORM_SCHEMA>;
