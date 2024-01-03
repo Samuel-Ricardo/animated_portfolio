@@ -1,13 +1,22 @@
+"use client";
+
 import "./animation.style.scss";
 
 import { MotionDiv } from "@/components/motion/div.component";
 import { MotionPath } from "@/components/motion/svg/path.component";
 import { MODULES } from "@/modules/app.factory";
+import { useInView } from "framer-motion";
+import { useMemo, useRef } from "react";
 
 export const ContactAreaAnimation = () => {
   const animation = MODULES.ANIMATION.MOTION.SVG.DRAWN();
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-100px" });
+
   return (
     <MotionDiv
+      ref={ref}
       className="contact_animation"
       initial={{ opacity: 1 }}
       whileInView={{ opacity: 0 }}
@@ -18,6 +27,7 @@ export const ContactAreaAnimation = () => {
           strokeWidth={0.2}
           fill="none"
           {...animation({})}
+          animate={isInView && { pathLength: 1 }}
           d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01

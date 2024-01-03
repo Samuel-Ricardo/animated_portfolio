@@ -12,7 +12,12 @@ export const ContactFormBody = () => {
   const animation = MODULES.ANIMATION.MOTION.OPACITY()({});
   const validation = MODULES.VALIDATION.ZOD.CONTACT.FORM();
 
-  const { register, handleSubmit, setValue } = useForm<ContactFormData>({
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm<ContactFormData>({
     resolver: zodResolver(validation),
   });
 
@@ -27,8 +32,11 @@ export const ContactFormBody = () => {
   return (
     <MotionForm {...animation} onSubmit={submit()}>
       <input type="text" required placeholder="Name" {...register("name")} />
+      <label>{errors.name?.message}</label>
       <input type="email" required placeholder="Email" {...register("email")} />
+      <label>{errors.email?.message}</label>
       <textarea rows={8} placeholder="Message" {...register("message")} />
+      <label>{errors.message?.message}</label>
       <button>Submit</button>
     </MotionForm>
   );
