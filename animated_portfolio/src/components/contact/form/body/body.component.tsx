@@ -1,3 +1,5 @@
+import "./body.style.scss";
+
 import { MotionForm } from "@/components/motion/form/form.component";
 import { MODULES } from "@/modules/app.factory";
 

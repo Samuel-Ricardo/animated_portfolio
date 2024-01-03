@@ -1,0 +1,26 @@
+@import "../../../../app/globals.scss";
+
+#Contact ._container #form {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input,
+    textarea {
+      padding: 20px;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+  }
+
+  button {
+    padding: 20px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
