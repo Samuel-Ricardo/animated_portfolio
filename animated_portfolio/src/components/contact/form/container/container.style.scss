@@ -1,5 +1,11 @@
 @import "../../../../app/globals.scss";
 
+#Contact {
+  @include mobile {
+    height: fit-content;
+  }
+}
+
 #Contact ._container #form {
   flex: 1;
   position: relative;
