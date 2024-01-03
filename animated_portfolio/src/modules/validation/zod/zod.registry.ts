@@ -1,0 +1,5 @@
+export const VALIDATION_ZOD_REGISTRY = {
+  CONTACT: {
+    FORM: "MODULE::VALIDATION:ZOD:CONTACT:FORM",
+  },
+};
