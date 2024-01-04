@@ -4,6 +4,7 @@ import { REPOSITORY_REGISTRY as REPOSITORY } from "./repository/repository.regis
 import { VALIDATION_ZOD_REGISTRY as VALIDATION } from "./validation/zod/zod.registry";
 import { CONFIG_REGISTRY as CONFIG } from "./@config/config.registry";
 import { MAILER_REGISTRY as MAILER } from "./mailer/mailer.registry";
+import { GATEWAY_REGISTRY as GATEWAY } from "./gateway/gateway.registry";
 
 export const MODULE = {
   ANIMATION,
@@ -12,4 +13,5 @@ export const MODULE = {
   VALIDATION,
   CONFIG,
   MAILER,
+  GATEWAY,
 };
