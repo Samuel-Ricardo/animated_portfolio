@@ -14,4 +14,8 @@ export class Email {
       message_html: this.message_html,
     };
   }
+
+  static fromDTO(dto: EmailDTO): Email {
+    return new Email(dto.to_name, dto.from_name, dto.message_html);
+  }
 }
