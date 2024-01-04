@@ -4,6 +4,7 @@ import { ANIMATION_FACTORY as ANIMATION } from "./animations/animation.factory";
 import { MAILER_FACTORY as MAILER } from "./mailer/mailer.factory";
 import { REPOSITORY_FACTORY as REPOSITORY } from "./repository/repository.factory";
 import { VALIDATION_FACTORY as VALIDATION } from "./validation/validation.factory";
+import { GATEWAY_FACTORY as GATEWAY } from "./gateway/gateway.factory";
 
 export const MODULES = {
   ANIMATION,
@@ -12,4 +13,5 @@ export const MODULES = {
   VALIDATION,
   CONFIG,
   MAILER,
+  GATEWAY,
 };
