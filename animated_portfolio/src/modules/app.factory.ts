@@ -5,6 +5,7 @@ import { MAILER_FACTORY as MAILER } from "./mailer/mailer.factory";
 import { REPOSITORY_FACTORY as REPOSITORY } from "./repository/repository.factory";
 import { VALIDATION_FACTORY as VALIDATION } from "./validation/validation.factory";
 import { GATEWAY_FACTORY as GATEWAY } from "./gateway/gateway.factory";
+import { EMAIL_FACTORY as EMAIL } from "./@core/email/email.factory";
 
 export const MODULES = {
   ANIMATION,
@@ -14,4 +15,5 @@ export const MODULES = {
   CONFIG,
   MAILER,
   GATEWAY,
+  EMAIL,
 };
