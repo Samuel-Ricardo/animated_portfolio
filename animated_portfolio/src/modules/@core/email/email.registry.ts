@@ -1,0 +1,8 @@
+export const EMAIL_REGISTRY = {
+  MAIN: Symbol.for("MODULE::CORE:EMAIL:MAIN"),
+  CONTROLLER: Symbol.for("MODULE::CORE:EMAIL:CONTROLLER"),
+  SERVICE: Symbol.for("MODULE::CORE:EMAIL:SERVICE"),
+  USE_CASE: {
+    SEND: Symbol.for("MODULE::CORE:EMAIL:USE_CASE:SEND"),
+  },
+};
