@@ -3,8 +3,9 @@ import { CONFIG_REGISTRY } from "./config.registry";
 import { CONFIG } from "./configs/config.global";
 import getDecorators from "inversify-inject-decorators";
 
-export const CONFIG_MODULES = new Container({ defaultScope: "Singleton" });
+export const CONFIG_MODULE = new Container({ defaultScope: "Singleton" });
 
-CONFIG_MODULES.bind(CONFIG_REGISTRY.ALL).toConstantValue(CONFIG);
+CONFIG_MODULE.bind(CONFIG_REGISTRY.ALL).toConstantValue(CONFIG);
+CONFIG_MODULE.bind(CONFIG_REGISTRY.ENV).toConstantValue(CONFIG.ENV);
 
-export const { lazyInject: injectConfig } = getDecorators(CONFIG_MODULES);
+export const { lazyInject: injectConfig } = getDecorators(CONFIG_MODULE);
