@@ -1,0 +1,3 @@
+export const EMAILJS_GATEWAY_REGISTRY = {
+  EMAIL: Symbol.for("MODULES::GATEWAY:EMAILJS:EMAIL"),
+};
