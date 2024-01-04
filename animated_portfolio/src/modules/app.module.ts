@@ -7,6 +7,7 @@ import { REPOSITORY_MODULE } from "./repository/repository.module";
 import { VALIDATION_MODULE } from "./validation/validation.module";
 import { CONFIG_MODULE } from "./@config/config.module";
 import { MAILER_MODULE } from "./mailer/mailer.module";
+import { GATEWAY_MODULE } from "./gateway/gateway.module";
 
 const MODULE = new Container({ autoBindInjectable: true });
 
@@ -18,4 +19,5 @@ export const APP_MODULE = Container.merge(
   VALIDATION_MODULE,
   CONFIG_MODULE,
   MAILER_MODULE,
+  GATEWAY_MODULE,
 );
