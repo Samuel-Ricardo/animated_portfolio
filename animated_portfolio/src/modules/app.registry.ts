@@ -3,6 +3,7 @@ import { PORTFOLIO_REGISTRY as PORTFOLIO } from "./@core/portfolio/portfolio.reg
 import { REPOSITORY_REGISTRY as REPOSITORY } from "./repository/repository.registry";
 import { VALIDATION_ZOD_REGISTRY as VALIDATION } from "./validation/zod/zod.registry";
 import { CONFIG_REGISTRY as CONFIG } from "./@config/config.registry";
+import { MAILER_REGISTRY as MAILER } from "./mailer/mailer.registry";
 
 export const MODULE = {
   ANIMATION,
@@ -10,4 +11,5 @@ export const MODULE = {
   REPOSITORY,
   VALIDATION,
   CONFIG,
+  MAILER,
 };
