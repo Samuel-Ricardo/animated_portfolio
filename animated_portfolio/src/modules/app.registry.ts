@@ -5,6 +5,7 @@ import { VALIDATION_ZOD_REGISTRY as VALIDATION } from "./validation/zod/zod.regi
 import { CONFIG_REGISTRY as CONFIG } from "./@config/config.registry";
 import { MAILER_REGISTRY as MAILER } from "./mailer/mailer.registry";
 import { GATEWAY_REGISTRY as GATEWAY } from "./gateway/gateway.registry";
+import { EMAIL_REGISTRY as EMAIL } from "./@core/email/email.registry";
 
 export const MODULE = {
   ANIMATION,
@@ -14,4 +15,5 @@ export const MODULE = {
   CONFIG,
   MAILER,
   GATEWAY,
+  EMAIL,
 };
