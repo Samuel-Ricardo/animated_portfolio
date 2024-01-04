@@ -4,7 +4,7 @@ import { Email } from "../entity/email.entity";
 
 @injectable()
 export class SendEmailUseCase extends EmailGatewayAccess {
-  execute(email: Email) {
-    return this.gateway.send(email);
+  async execute(email: Email) {
+    return await this.gateway.send(email);
   }
 }
