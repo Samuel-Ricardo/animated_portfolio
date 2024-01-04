@@ -8,6 +8,7 @@ import { VALIDATION_MODULE } from "./validation/validation.module";
 import { CONFIG_MODULE } from "./@config/config.module";
 import { MAILER_MODULE } from "./mailer/mailer.module";
 import { GATEWAY_MODULE } from "./gateway/gateway.module";
+import { EMAIL_MODULE } from "./@core/email/email.module";
 
 const MODULE = new Container({ autoBindInjectable: true });
 
@@ -20,4 +21,5 @@ export const APP_MODULE = Container.merge(
   CONFIG_MODULE,
   MAILER_MODULE,
   GATEWAY_MODULE,
+  EMAIL_MODULE,
 );
