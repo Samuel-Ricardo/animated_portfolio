@@ -2,6 +2,7 @@
 import "./body.style.scss";
 
 import { MotionForm } from "@/components/motion/form/form.component";
+import { useEmail } from "@/hooks/email/email.hook";
 import { MODULES } from "@/modules/app.factory";
 import { ContactFormData } from "@/modules/validation/zod/form/contact.validation";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -11,6 +12,8 @@ import { useForm } from "react-hook-form";
 export const ContactFormBody = () => {
   const animation = MODULES.ANIMATION.MOTION.OPACITY()({});
   const validation = MODULES.VALIDATION.ZOD.CONTACT.FORM();
+
+  const { sendEmail } = useEmail();
 
   const {
     register,
@@ -23,10 +26,15 @@ export const ContactFormBody = () => {
 
   const submit = useCallback(
     () =>
-      handleSubmit(async (data) => {
-        console.log({ data });
-      }),
-    [handleSubmit],
+      handleSubmit(
+        async (data) =>
+          await sendEmail({
+            to_name: "Samuel Ricardo",
+            from_name: data.name,
+            message: data.message + " \n\n " + data.email,
+          }),
+      ),
+    [handleSubmit, sendEmail],
   );
 
   return (
