@@ -11,11 +11,11 @@ export class Email {
     return {
       to_name: this.to_name,
       from_name: this.from_name,
-      message_html: this.message_html,
+      message: this.message_html,
     };
   }
 
   static fromDTO(dto: EmailDTO): Email {
-    return new Email(dto.to_name, dto.from_name, dto.message_html);
+    return new Email(dto.to_name, dto.from_name, dto.message);
   }
 }
